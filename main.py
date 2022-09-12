@@ -17,5 +17,5 @@ train.plot(ax=ax, label="Training Set")
 test.plot(ax=ax, label="Test Set")
 ax.axvline('01-01-2015', color='black', ls="--")
 ax.legend(['Training Set', 'Test Set'])
+week = df.loc[(df.index > '01-01-2015') & (df.index < '01-08-2015')].plot()
 plt.show()
-
